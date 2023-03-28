@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Google</title>
+    <link rel="shortcut icon" type="image/jpeg" href="img/shortcut.jpeg" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--Links on top left of page-->
+      <div class="header-left">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+      </div>
+      <!--Links on top right of page-->
+      <div class="header-right">
+        <a href="./imgSearch.html">Image Search</a>
+        <a href="./advSearch.html">Advanced Search</a>
+      </div>
+    </header>
+    <main>
+      <div class="google-logo">
+        <img src="img/google.svg" alt="Google" />
+        <!--Darkmode Selector-->
+        <div onclick="darkMode()" class="switch darkmode"></div>
+      </div>
+      <div>
+        <form action="https://google.com/search">
+          <div class="search-icon gsprite"></div>
+          <input type="text" name="q" id="search" />
+          <div class="buttons">
+            <button type="submit" id="gsearch" value="Google Search">
+              Google Search
+            </button>
+            <button id="lucky">I'm Feeling Lucky</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <!--Links on bottom left of page-->
+      <div class="footer-left">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search Works</a>
+      </div>
+      <!--Links on bottom right of page-->
+      <div class="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+      </div>
+    </footer>
+  </body>
+</html>
